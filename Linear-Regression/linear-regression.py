@@ -44,6 +44,11 @@ class LinearRegression(nn.Module):
 
 model = LinearRegression()
 
+###############################################
+# Linear regression model
+# model = nn.Linear(input_size, output_size)
+###############################################
+
 # Define the loss function and the optimization function
 criterion = nn.MSELoss()
 optimizer = optim.SGD(model.parameters(), lr=learning_rate)
