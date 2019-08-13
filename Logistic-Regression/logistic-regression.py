@@ -36,7 +36,19 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
                                           batch_size=batch_size, 
                                           shuffle=False)
 
-
+############################################################
+# Logistic Regression Model
+#class LogisticRegression(nn.Module):
+#    def __init__(self, input_size, num_classes):
+#        super(LogisticRegression, self).__init__()
+#        self.linear = nn.Linear(input_size, num_classes)
+#    
+#    def forward(self, x):
+#        out = self.linear(x)
+#        return out
+#
+#model = LogisticRegression(input_size, num_classes)
+#############################################################
 
 # Logistic Regression model
 model = nn.Linear(input_size, num_classes)
